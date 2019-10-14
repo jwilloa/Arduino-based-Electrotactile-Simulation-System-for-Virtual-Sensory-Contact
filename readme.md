@@ -55,7 +55,7 @@ What versioning statergy are you using for your project, something like [semanti
 
 ## Authors
 Provide your names here
-* Fred Bloggs - UI Design
+* Javan Willock - Project Developer
 
 ## References
 * [Gitlab Markdown Guide](https://docs.gitlab.com/ee/user/markdown.html)
