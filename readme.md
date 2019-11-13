@@ -1,4 +1,4 @@
-# Project Title - Arduino-based Electrotactile Simulation System for Blind Readers
+# Project Title - Arduino-based Electrotactile Simulation System for Virtual Sensory Contact
 
 A *brief* paragraph explaining your project and what it does should be written here. The idea is to give readers an overview of what it is that you've built.
 
@@ -7,8 +7,9 @@ You should write a bit about **how** I can get your project working, It's good t
 
 ### Prerequisites
 What do I need in order to get your project running? For example,
-* Python 3.5 (or later)
-* sqlalchemy
+* Python 2.7 
+* Motionbuilder
+* Arduino IDE
 
 ### Installing
 A step by step guide on how to build and install your software, for example:
@@ -25,8 +26,7 @@ database_pass=password
 #### Install libraries and run program
 
 ```
-pip install -r requirements.txt
-python3 main.py
+pip install pyserial
 ```
 
 ### Running Tests
@@ -45,6 +45,7 @@ What versioning statergy are you using for your project, something like [semanti
 ### Pre-requisites
 
 * Components
+*   LEDs, Resistors, Wires
 * PBC
 * etc..
  
