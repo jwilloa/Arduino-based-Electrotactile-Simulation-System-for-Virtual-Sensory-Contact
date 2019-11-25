@@ -1,5 +1,4 @@
 from ctypes import *
-import pdb
 
 def testy(glove):
     print "hello"
@@ -100,7 +99,7 @@ class FiveDTGlove:
     def getSensorRawAll(self):
         """Get a list of all the current raw sensor values."""
         arrTypeUShortArray20 = c_ushort*20
-        sensorRawValues = arrTypeUShortArray20()     
+        sensorRawValues = arrTypeUShortArray20()
         self.gloveDLL.fdGetSensorRawAll(self.glovePntr, sensorRawValues)
         numSensors = self.gloveDLL.fdGetNumSensors(self.glovePntr)
         return list(sensorRawValues)
