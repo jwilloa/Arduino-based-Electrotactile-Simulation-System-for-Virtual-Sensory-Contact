@@ -25,7 +25,8 @@ class FiveDTGlove:
         sensorRawValues = arrTypeUShortArray20()     
         self.gloveDLL.fdGetSensorRawAll(self.glovePntr, sensorRawValues)
         numSensors = self.gloveDLL.fdGetNumSensors(self.glovePntr)
-        global sensorRawValues
+        print "Thumb: ", list(sensorRawValues)[0], "Index", list(sensorRawValues)[3]
+        #global sensorRawValues
         #pdb.set_trace()
         #return list(sensorRawValues)
 
