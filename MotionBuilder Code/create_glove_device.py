@@ -9,3 +9,8 @@ gloveDevice = FBCreateObject("Browsing/Templates/Devices", "5DT DataGlove", "5DT
 gloveDevice.OnLine = True
 gloveDevice.Live = True
 scene.Devices.append(gloveDevice)
+
+GT = FBVector3d()
+gloveDevice.GetVector(GT, FBModelTransformationMatrix.kModelTranslation, True)
+
+#FBSystem&#40;&#41;.Scene.Evaluate()
