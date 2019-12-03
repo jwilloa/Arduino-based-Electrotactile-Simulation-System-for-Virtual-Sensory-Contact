@@ -20,13 +20,13 @@ class FiveDTGlove:
             raise IOError("Could not connect to 5DT glove.")            
 
     def getSensorRawAll(self):
+        #pdb.set_trace()
         """Get a list of all the current raw sensor values."""
         arrTypeUShortArray20 = c_ushort*20
         sensorRawValues = arrTypeUShortArray20()     
         self.gloveDLL.fdGetSensorRawAll(self.glovePntr, sensorRawValues)
         numSensors = self.gloveDLL.fdGetNumSensors(self.glovePntr)
-        print "Thumb: ", list(sensorRawValues)[0], "Index", list(sensorRawValues)[3]
-        #global sensorRawValues
+        global sensorRawValues
         #pdb.set_trace()
         #return list(sensorRawValues)
 
@@ -49,15 +49,15 @@ class FiveDTGlove:
         #return list(sensorRawValues)
 
 
-# if __name__ == '__main__':
-#     while True:
-# ##        root = Tk()
-# ##        root.title("T7 CPU GUI")
-# ##        root.geometry("300x300+700+300")
-#         glove = FiveDTGlove()
-#         glove.open("USB0")
-#         glove.getSensorRawAll()
-#         #glove.turnLED()
-#         #print "Raw sensor values: " + str(glove.getSensorRawAll())
-#         print "Thumb: ", list(sensorRawValues)[0], "Index", list(sensorRawValues)[3]
-#         #print "Thumb" + list(sensorRawValues)[2]
+if __name__ == '__main__':
+    while True:
+##        root = Tk()
+##        root.title("T7 CPU GUI")
+##        root.geometry("300x300+700+300")
+        glove = FiveDTGlove()
+        glove.open("USB0")
+        glove.getSensorRawAll()
+        ##glove.turnLED()
+        #print "Raw sensor values: " + str(glove.getSensorRawAll())
+        print "Thumb: ", list(sensorRawValues)[0], "Index", list(sensorRawValues)[3]
+        #print "Thumb" + list(sensorRawValues)[2]
