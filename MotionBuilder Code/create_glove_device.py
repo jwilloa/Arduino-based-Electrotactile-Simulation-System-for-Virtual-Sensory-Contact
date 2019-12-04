@@ -1,5 +1,5 @@
 from pyfbsdk import *
-import os
+#import os
 
 # Access system properties
 scene = FBSystem().Scene
