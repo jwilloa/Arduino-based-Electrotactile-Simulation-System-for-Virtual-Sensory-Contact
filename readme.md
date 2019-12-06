@@ -18,9 +18,13 @@ Should you want to replicate this project you will need the following software p
 ### Installing
 Install links for the software:
 Python 2.7: https://www.python.org/ftp/python/2.7/python-2.7.amd64.msi
+
 Motionbuilder 2018: https://www.autodesk.com/education/free-software/motionbuilder
+
 Arduino IDE: https://www.arduino.cc/download_handler.php?f=https://www.microsoft.com/store/apps/9nblggh4rsd8?ocid=badge
+
 PyCharm: https://www.jetbrains.com/pycharm/download/download-thanks.html?platform=windows&code=PCC
+
 Multisim: https://www.ni.com/en-gb/support/downloads/software-products/download.multisim.html#312060
 
 #### Install libraries and run program
