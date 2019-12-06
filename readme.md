@@ -32,20 +32,15 @@ end
 
 ## Getting Started (Software Based)
 Should you want to replicate this project you will need the following software prerequisites.
-
-| Software | Version | Link |
+### Prerequisites and Installation Links
+| Software | Version | Download Link |
 | ---      |  ------  |---------:|
 | Python  | 2.7   | [#](https://www.python.org/ftp/python/2.7/python-2.7.amd64.msi)   |
-| Motionbuilder | 2018 | cell 6 is much lze. |
-| cell 7   |          | cell <br> 9 |
+| Motionbuilder | 2018 | [#](https://www.arduino.cc/download_handler.php?f=https://www.microsoft.com/store/apps/9nblggh4rsd8?ocid=badge) |
+| Arduino IDE  |    1.8.10      | [#](https://www.arduino.cc/download_handler.php?f=https://www.microsoft.com/store/apps/9nblggh4rsd8?ocid=badge) |
+| PyCharm   |     2019.2.4     | [#](https://www.jetbrains.com/pycharm/download/download-thanks.html?platform=windows&code=PCC) |
+| Multisim   |    14.1      | [#](https://www.ni.com/en-gb/support/downloads/software-products/download.multisim.html#312060) |
 
-### Prerequisites and installation links
-* [Python 2.7](https://www.python.org/ftp/python/2.7/python-2.7.amd64.msi)
-* [Motionbuilder 2018](https://www.autodesk.com/education/free-software/motionbuilder)
-* [Arduino IDE](https://www.arduino.cc/download_handler.php?f=https://www.microsoft.com/store/apps/9nblggh4rsd8?ocid=badge)
-* [PyCharm](https://www.jetbrains.com/pycharm/download/download-thanks.html?platform=windows&code=PCC)
-* [Multisim](https://www.ni.com/en-gb/support/downloads/software-products/download.multisim.html#312060)
-* 5DT Ultra Data Glove
 
 #### Install libraries and run program
 
@@ -59,7 +54,16 @@ The 5DT Data Glove comes with a 'GloveManager' application, this can be used to 
 ## Getting Started (Hardware Based)
 
 ### Pre-requisites
-
+| Hardware | Version | Download Link |
+| ---      |  ------  |---------:|
+| 5DT Ultra Data Glove  | 2.7   | [#](https://www.python.org/ftp/python/2.7/python-2.7.amd64.msi)   |
+| LEDs | 2018 | [#](https://www.arduino.cc/download_handler.php?f=https://www.microsoft.com/store/apps/9nblggh4rsd8?ocid=badge) |
+| Resitors  |    1.8.10      | [#](https://www.arduino.cc/download_handler.php?f=https://www.microsoft.com/store/apps/9nblggh4rsd8?ocid=badge) |
+| Capacitors   |     2019.2.4     | [#](https://www.jetbrains.com/pycharm/download/download-thanks.html?platform=windows&code=PCC) |
+| Wires |    14.1      | [#](https://www.ni.com/en-gb/support/downloads/software-products/download.multisim.html#312060) |
+|  |        | |
+|  |        | |
+|  |        | |
 * Components
 *   LEDs, Resistors, Wires, Capacitors
 * PBC
