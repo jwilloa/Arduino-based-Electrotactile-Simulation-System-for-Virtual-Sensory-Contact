@@ -16,3 +16,6 @@ GloveManager can be used to test the 5DT Data Glove and to obtain calibrated val
 
 Start the program by running **GloveManager.exe**, the following screen should be displayed (see figure 1).
 
+![alt text](https://cseegit.essex.ac.uk/ce301_2019/ce301_willock_j/blob/master/Technical%20Documentation/Getting%20Started%20(Software)/images/GloveManager_snip.JPG)
+
+
