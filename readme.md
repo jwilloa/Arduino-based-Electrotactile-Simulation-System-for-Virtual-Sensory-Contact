@@ -1,27 +1,27 @@
 # Project Title - Arduino-based Electrotactile Simulation System for Virtual Sensory Contact
 
-A *brief* paragraph explaining your project and what it does should be written here. The idea is to give readers an overview of what it is that you've built.
+The project has been tweaked a little bit from it's orginal assignment. Elaborating on the project title, a glove will be worn by a user, and mapping of the finger movements will determine whether contact with a virtual object has been made.
+Upon contact, the user will experience electrotactile stimulation on their fingertips, sufficient enough to give the impression of touch.
+
 
 ## Getting Started (Software Based)
-You should write a bit about **how** I can get your project working, It's good to think in terms of the following sections:
+Should you want to replicate this project you will need the following software prerequisites.
 
 ### Prerequisites
-What do I need in order to get your project running? For example,
 * Python 2.7 
-* Motionbuilder
+* Motionbuilder 2018
 * Arduino IDE
+* PyCharm
+* Multisim
+* 5DT Ultra Data Glove
 
 ### Installing
-A step by step guide on how to build and install your software, for example:
-
-#### Edit the configuration file
-In myconfig.ini, change the following settings to match your requirements:
-
-```
-database_name=test
-database_user=test
-database_pass=password
-```
+Install links for the software:
+Python 2.7: https://www.python.org/ftp/python/2.7/python-2.7.amd64.msi
+Motionbuilder 2018: https://www.autodesk.com/education/free-software/motionbuilder
+Arduino IDE: https://www.arduino.cc/download_handler.php?f=https://www.microsoft.com/store/apps/9nblggh4rsd8?ocid=badge
+PyCharm: https://www.jetbrains.com/pycharm/download/download-thanks.html?platform=windows&code=PCC
+Multisim: https://www.ni.com/en-gb/support/downloads/software-products/download.multisim.html#312060
 
 #### Install libraries and run program
 
@@ -30,29 +30,24 @@ pip install pyserial
 ```
 
 ### Running Tests
-How do I run your tests? Make it as easy as possible to do this!
-
-```
-pip install -r requirements.txt
-./tests.py
-```
-
-### Versioning Statergy
-What versioning statergy are you using for your project, something like [semantic versioning](https://semver.org/) might be a good idea.
+The 5DT Data Glove comes with a 'GloveManager' application, this can be used to test each finger connectivity.
 
 ## Getting Started (Hardware Based)
 
 ### Pre-requisites
 
 * Components
-*   LEDs, Resistors, Wires
+*   LEDs, Resistors, Wires, Capacitors
 * PBC
-* etc..
+* Arduino UNO Board
+* MAX232 Driver/Reciever
  
 ### Component Testing
+
 ### PCB Board design
+Board design will be designed and simulated in Multisim prior to building.
+
 ### System Building
-### Hardware version Stratgery
 
 ## Authors
 Provide your names here
