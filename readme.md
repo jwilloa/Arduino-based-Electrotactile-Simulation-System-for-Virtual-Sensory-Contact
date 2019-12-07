@@ -69,9 +69,6 @@ pip install pyserial
 
 ```
 
-### Running Tests
-The 5DT Data Glove comes with a 'GloveManager' application, this can be used to test each finger connectivity.
-
 ## Getting Started (Hardware Based)
 
 ### Pre-requisites
