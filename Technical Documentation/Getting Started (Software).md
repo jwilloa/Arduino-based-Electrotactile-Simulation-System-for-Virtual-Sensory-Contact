@@ -18,5 +18,5 @@ The topics in this section contain information to help you get started on the so
 | [Setting up 5DT Data Glove Ultra](https://cseegit.essex.ac.uk/ce301_2019/ce301_willock_j/blob/master/Technical%20Documentation/Getting%20Started%20(Software)/Setting%20up%205DT%20Data%20Glove%20Ultra.md) | The 5DT Data Glove Ultra is used for capturing hand motion data for use with animations and virtual reality.   |   
 |[Setting up gloves in Motionbuilder](https://cseegit.essex.ac.uk/ce301_2019/ce301_willock_j/blob/master/Technical%20Documentation/Getting%20Started%20(Software)/Setting%20up%20gloves%20in%20Motionbuilder.md)| Covering the installation of Motionbuilder and the setup of the gloves|
 |[Installing libraries](https://cseegit.essex.ac.uk/ce301_2019/ce301_willock_j/blob/master/Technical%20Documentation/Getting%20Started%20(Software)/Installing%20Libraries.md)| Essential libraries |
-|[Get raw data values]()|With the gloves working in Motionbuilder the next step is to process the raw data values|
+|[Get raw data values](https://cseegit.essex.ac.uk/ce301_2019/ce301_willock_j/blob/master/Technical%20Documentation/Getting%20Started%20(Software)/Getting%20Raw%20Data%20Values.md)|With the gloves working in Motionbuilder the next step is to process the raw data values|
 |[Get raw vector values]()||
