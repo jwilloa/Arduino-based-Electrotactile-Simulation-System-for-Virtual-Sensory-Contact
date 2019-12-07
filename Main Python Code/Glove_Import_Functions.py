@@ -1,4 +1,4 @@
-from Glove_Functions import FiveDTGlove
+from gloveFunctions import FiveDTGlove
 import pdb
 
 
