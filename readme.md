@@ -9,7 +9,7 @@ Electrotactile feedback stimulation development is the subject of many research 
 The main idea being to communicate non-tactile information via electrical stimulation of the sense of touch to the user. 
 
 Successful inplementation of electrotactile feedback (ETF) could result in a better standard of living and/or increased experiences and safety in a variety of environments. 
-Individuals without the ability to process information in a conventional way, i.e through their eyes, may find that they can still experience the information via ETS.
+Individuals without the ability to process information in a conventional way, i.e through their eyes, may find that they can still experience the world via ETS.
 And in situations where an individual is teleoperating a system where sensation may be of benefit. An elaborate example being an astronaut.
 
 There are also applications in prosthetics and virtual reality (the underlying basis for this project). 
