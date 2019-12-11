@@ -48,7 +48,7 @@ class FiveDTGlove:
                 time.sleep(0.2)
         if sensorRawValues[13] >= 3000:
             for i in range(3):
-                ser.writelines(b'L')
+                ser.writelines(b'S')
                 time.sleep(0.2)
         else:
             ser.writelines(b'L')
