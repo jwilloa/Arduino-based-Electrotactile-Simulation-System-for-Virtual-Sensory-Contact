@@ -45,11 +45,10 @@ end
 ```
 
 ## [Getting Started (Software Based)](https://cseegit.essex.ac.uk/ce301_2019/ce301_willock_j/blob/master/Technical%20Documentation/Getting%20Started%20(Software).md)
-Should you want to replicate this project you will need the following software prerequisites.
 
 You can find the main code [here](https://cseegit.essex.ac.uk/ce301_2019/ce301_willock_j/tree/master/Main%20Python%20Code)
 
-The idea is the use the just the 'Import functions.py' as the main file. It will access gloveFunctions.py to perform certain actions such as read the glove raw data, and vector co-ordinates.
+The idea is the use the just the '**Import functions.py**' as the main file. It will access **gloveFunctions.py** to perform certain actions such as read the glove raw data, and vector co-ordinates.
 
 ## [Getting Started (Hardware Based)]()
 
