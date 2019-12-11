@@ -46,26 +46,7 @@ end
 
 ## [Getting Started (Software Based)](https://cseegit.essex.ac.uk/ce301_2019/ce301_willock_j/blob/master/Technical%20Documentation/Getting%20Started%20(Software).md)
 Should you want to replicate this project you will need the following software prerequisites.
-### Prerequisites and Installation Links
-| Software      | Version  | Download Link                                                                                                   |
-| ---           |  ------  |---------:                                                                                                       |
-| Python        |2.7       | [#](https://www.python.org/ftp/python/2.7/python-2.7.amd64.msi)                                                 |
-| Motionbuilder |2018      | [#](https://www.arduino.cc/download_handler.php?f=https://www.microsoft.com/store/apps/9nblggh4rsd8?ocid=badge) |
-| Arduino IDE   |1.8.10    | [#](https://www.arduino.cc/download_handler.php?f=https://www.microsoft.com/store/apps/9nblggh4rsd8?ocid=badge) |
-| PyCharm       |2019.2.4  | [#](https://www.jetbrains.com/pycharm/download/download-thanks.html?platform=windows&code=PCC)                  |
-| Multisim      |14.1      | [#](https://www.ni.com/en-gb/support/downloads/software-products/download.multisim.html#312060)                 |
 
-
-#### Install libraries
-To install pip
-```
-curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
-python get-pip.py
-```
-
-Then install serial lib
-```
-pip install pyserial
 
 ```
 
