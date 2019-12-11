@@ -45,31 +45,12 @@ end
 ```
 
 ## [Getting Started (Software Based)](https://cseegit.essex.ac.uk/ce301_2019/ce301_willock_j/blob/master/Technical%20Documentation/Getting%20Started%20(Software).md)
-Should you want to replicate this project you will need the following software prerequisites.
-### Prerequisites and Installation Links
-| Software      | Version  | Download Link                                                                                                   |
-| ---           |  ------  |---------:                                                                                                       |
-| Python        |2.7       | [#](https://www.python.org/ftp/python/2.7/python-2.7.amd64.msi)                                                 |
-| Motionbuilder |2018      | [#](https://www.arduino.cc/download_handler.php?f=https://www.microsoft.com/store/apps/9nblggh4rsd8?ocid=badge) |
-| Arduino IDE   |1.8.10    | [#](https://www.arduino.cc/download_handler.php?f=https://www.microsoft.com/store/apps/9nblggh4rsd8?ocid=badge) |
-| PyCharm       |2019.2.4  | [#](https://www.jetbrains.com/pycharm/download/download-thanks.html?platform=windows&code=PCC)                  |
-| Multisim      |14.1      | [#](https://www.ni.com/en-gb/support/downloads/software-products/download.multisim.html#312060)                 |
 
+You can find the main code [here](https://cseegit.essex.ac.uk/ce301_2019/ce301_willock_j/tree/master/Main%20Python%20Code)
 
-#### Install libraries
-To install pip
-```
-curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
-python get-pip.py
-```
+The idea is the use the just the '**Import functions.py**' as the main file. It will access **gloveFunctions.py** to perform certain actions such as read the glove raw data, and vector co-ordinates.
 
-Then install serial lib
-```
-pip install pyserial
-
-```
-
-## Getting Started (Hardware Based)
+## [Getting Started (Hardware Based)]()
 
 ### Pre-requisites
 | Topic           | Description  | 
@@ -83,6 +64,10 @@ pip install pyserial
 | Arduino Board   |  UNO     |
 | Driver/Reciever |  MAX232  |
 | Electrodes      |          |
+
+| Software      | Version  | Download Link                                                                                                   |
+| ---           |  ------  |---------:                                                                                                       |
+| Multisim      |14.1      | [#](https://www.ni.com/en-gb/support/downloads/software-products/download.multisim.html#312060)                 |
 
 ### Component Testing
 
