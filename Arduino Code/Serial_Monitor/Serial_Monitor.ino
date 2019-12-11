@@ -11,28 +11,69 @@
 
 */
 
-const int ledPin = 13; // the pin that the LED is attached to
+
+// the pin that the LED is attached to
+const int ledPinThumb = 13;
+const int ledPinIndex = 12;
+const int ledPinMiddle = 11;
+const int ledPinRing = 7;
+const int ledPinLittle = 6;
+
 int incomingByte;      // a variable to read incoming serial data into
 
 void setup() {
+  
   // initialize serial communication:
   Serial.begin(9600);
+  
   // initialize the LED pin as an output:
-  pinMode(ledPin, OUTPUT);
+  pinMode(ledPinThumb, OUTPUT);
+  pinMode(ledPinIndex, OUTPUT);
+  pinMode(ledPinMiddle, OUTPUT);
+  pinMode(ledPinRing, OUTPUT);
+  pinMode(ledPinLittle, OUTPUT);     
 }
 
 void loop() {
+  
   // see if there's incoming serial data:
   if (Serial.available() > 0) {
     // read the oldest byte in the serial buffer:
     incomingByte = Serial.read();
     // if it's a capital H, turn on the LED:
-    if (incomingByte == 'H') {
-      digitalWrite(ledPin, HIGH);
+    
+    if (incomingByte == 'T') {
+      digitalWrite(ledPinThumb, HIGH);
+      }
+    if (incomingByte == 'I') {
+      digitalWrite(ledPinIndex, HIGH);
+      }
+    if (incomingByte == 'M') {     
+      digitalWrite(ledPinMiddle, HIGH);
+      }
+    if (incomingByte == 'R') {
+      digitalWrite(ledPinRing, HIGH);
+      }
+    if (incomingByte == 'S') {
+      digitalWrite(ledPinLittle, HIGH);
     }
+    
+    
     // if it's an L, turn off the LED:
     if (incomingByte == 'L') {
-      digitalWrite(ledPin, LOW);
+      digitalWrite(ledPinThumb, LOW);
+      }
+    if (incomingByte == 'L') {      
+      digitalWrite(ledPinIndex, LOW);
+      }
+    if (incomingByte == 'L') {
+      digitalWrite(ledPinMiddle, LOW);
+      }
+    if (incomingByte == 'L') {
+      digitalWrite(ledPinRing, LOW);
+      }
+    if (incomingByte == 'L') {
+      digitalWrite(ledPinLittle, LOW);
     }
   }
 }

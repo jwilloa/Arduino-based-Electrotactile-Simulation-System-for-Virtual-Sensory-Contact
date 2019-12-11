@@ -9,4 +9,5 @@ if __name__ == '__main__':
         glove = FiveDTGlove()
         glove.open("USB0")
         glove.getSensorRawAll()
+        glove.turnLED()
 

@@ -1,8 +1,6 @@
 from ctypes import *
 import serial
 import time
-import Tkinter as tk
-from Tkinter import *
 import pdb
 
 class FiveDTGlove:
@@ -20,44 +18,50 @@ class FiveDTGlove:
             raise IOError("Could not connect to 5DT glove.")            
 
     def getSensorRawAll(self):
-        #pdb.set_trace()
+        global sensorRawValues
         """Get a list of all the current raw sensor values."""
         arrTypeUShortArray20 = c_ushort*20
         sensorRawValues = arrTypeUShortArray20()     
         self.gloveDLL.fdGetSensorRawAll(self.glovePntr, sensorRawValues)
         numSensors = self.gloveDLL.fdGetNumSensors(self.glovePntr)
-        global sensorRawValues
-        #pdb.set_trace()
+        print "Thumb: ", list(sensorRawValues)[0], "Index", list(sensorRawValues)[3], "Middle", list(sensorRawValues)[6], \
+            "Ring", list(sensorRawValues)[9], "Little", list(sensorRawValues)[12]
         #return list(sensorRawValues)
 
-    # def turnLED(self):
-    #     ser = serial.Serial('COM5', 9600)
-    #     #print("Raw thumb sensor values: ", sensorRawValues[0])
-    #     if sensorRawValues[0] >= 2500:
-    #         #print "happy days"
-    #         for i in range(3):
-    #             ser.writelines(b'H')
-    #             time.sleep(0.2)
-    #     if sensorRawValues[3] >= 3400:
-    #         #print "happy days"
-    #         for i in range(3):
-    #             ser.writelines(b'T')
-    #             time.sleep(0.2)
-    #     else:
-    #         ser.writelines(b'L')
+    def turnLED(self):
+        ser = serial.Serial('COM5', 9600)
+        if sensorRawValues[0] >= 2500:
+            for i in range(3):
+                ser.writelines(b'T')
+                time.sleep(0.2)
+        if sensorRawValues[3] >= 3400:
+            for i in range(3):
+                ser.writelines(b'I')
+                time.sleep(0.2)
+        if sensorRawValues[7] >= 2500:
+            for i in range(3):
+                ser.writelines(b'M')
+                time.sleep(0.2)
+        if sensorRawValues[10] >= 2800:
+            for i in range(3):
+                ser.writelines(b'R')
+                time.sleep(0.2)
+        if sensorRawValues[13] >= 3000:
+            for i in range(3):
+                ser.writelines(b'L')
+                time.sleep(0.2)
+        else:
+            ser.writelines(b'L')
             
         #return list(sensorRawValues)
 
 
-if __name__ == '__main__':
-    while True:
-##        root = Tk()
-##        root.title("T7 CPU GUI")
-##        root.geometry("300x300+700+300")
-        glove = FiveDTGlove()
-        glove.open("USB0")
-        glove.getSensorRawAll()
-        ##glove.turnLED()
-        #print "Raw sensor values: " + str(glove.getSensorRawAll())
-        print "Thumb: ", list(sensorRawValues)[0], "Index", list(sensorRawValues)[3]
-        #print "Thumb" + list(sensorRawValues)[2]
+# if __name__ == '__main__':
+#     while True:
+#         glove = FiveDTGlove()
+#         glove.open("USB0")
+#         glove.getSensorRawAll()
+#         ##glove.turnLED()
+#         #print "Raw sensor values: " + str(glove.getSensorRawAll())
+#         print "Thumb: ", list(sensorRawValues)[0], "Index", list(sensorRawValues)[3]
+#         #print "Thumb" + list(sensorRawValues)[2]
