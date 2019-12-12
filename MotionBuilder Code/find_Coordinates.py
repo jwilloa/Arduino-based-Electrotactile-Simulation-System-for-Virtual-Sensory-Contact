@@ -35,11 +35,15 @@ from pyfbsdk import *
 ##    print component.Translation
 
 
-myCube2 = FBFindModelByLabelName("Cube")
-myCube2.Selected = True
-cube2 = FBVector3d()
+##myCube2 = FBFindModelByLabelName("Cube")
+##myCube2.Selected = True
+##cube2 = FBVector3d()
+##
+##
+##myCube2.GetVector(cube2)
+##print cube2
 
+test = FBFindModelByLabelName("5DT DataGlove 1:thumbD")
+test.Selected = True
 
-myCube2.GetVector(cube2)
-print cube2
 
