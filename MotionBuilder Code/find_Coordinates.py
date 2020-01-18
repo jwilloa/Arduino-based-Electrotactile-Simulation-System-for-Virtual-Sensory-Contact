@@ -1,4 +1,4 @@
-from pyfbsdk import *
+#from pyfbsdk import *
 
 #myCube = FBModelCube("cube")
 #myCube.Show = True
@@ -43,7 +43,14 @@ from pyfbsdk import *
 ##myCube2.GetVector(cube2)
 ##print cube2
 
-test = FBFindModelByLabelName("5DT DataGlove 1:thumbD")
-test.Selected = True
+##test = FBFindModelByLabelName("5DT DataGlove 1:thumbD")
+##test.Selected = True
 
 
+from pyfbsdk import *
+
+selectedModels = FBModelList()
+FBGetSelectedModels(selectedModels,None,True)
+pos = FBVector3d()
+for item in selectedModels: pos += item.Translation
+print pos
