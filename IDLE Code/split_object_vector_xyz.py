@@ -1,7 +1,7 @@
 import telnetlib
 import re
 tn = telnetlib.Telnet("127.0.0.1", 4242)
-
+a = []
 #Needed to get to the point in the PythonShell where you can write code.
 while True:
     tn.read_until('>>>', 0.1)
@@ -17,9 +17,9 @@ while True:
     tn.write("print cube2\n")
 
     raw = str(tn.read_until('>>>', .1))
-    print raw
+
     numbers = re.compile('-?\d+(?:\.\d+)?')
-    a = numbers.findall(raw)
+    a = map(float, numbers.findall(raw))
     del a[0]
     print a
 
