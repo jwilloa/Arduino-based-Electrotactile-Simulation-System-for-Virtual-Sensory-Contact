@@ -21,6 +21,8 @@ while True:
     numbers = re.compile('-?\d+(?:\.\d+)?')
     a = map(float, numbers.findall(raw))
     del a[0]
-    print a
+    print (a[0]+20.385), a[1], a[2]
+
+
 
 tn.close()
