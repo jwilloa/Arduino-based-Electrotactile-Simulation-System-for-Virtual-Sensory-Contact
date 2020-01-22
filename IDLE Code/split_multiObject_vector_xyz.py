@@ -79,7 +79,7 @@ class Cubes:
 if __name__ == '__main__':
     tn = telnetlib.Telnet("127.0.0.1", 4242)
     c = Cubes()
-  #  c.create()
+    c.create()
     while True:
         c.first_Cube()
         c.second_Cube()
