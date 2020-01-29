@@ -1,7 +1,7 @@
 import telnetlib
 tn = telnetlib.Telnet("127.0.0.1", 4242)
 
-#Needed to get to the point in the PythonShell where you can write code.
+#Needed to get to the point in the PythonShell where you can write code
 while True:
     tn.read_until('>>>', 0.1)
     tn.write("myCube2 = FBFindModelByLabelName('5DTGlove1:indexD')\n")
