@@ -2,7 +2,7 @@ import telnetlib
 import re
 
 class Cubes:
-    def create(self):
+    def create_Cube(self):
         ################    First Cube  ######################
         tn.read_until('>>>', 0.1)
         tn.write("name = 'CubeOne'\n")
@@ -19,21 +19,21 @@ class Cubes:
         tn.read_until('>>>', 0.1)
         tn.write("cube.Scaling = FBVector3d(10, 10, 10)\n")
 
-        ################    Second Cube ######################
+        ################   Plane     ######################
         tn.read_until('>>>', 0.1)
-        tn.write("name = 'CubeTwo'\n")
+        tn.write("name = ''\n")
 
         tn.read_until('>>>', 0.1)
-        tn.write("cube = FBModelCube(name)\n")
+        tn.write("plane = FBModelCube(name)\n")
 
         tn.read_until('>>>', 0.1)
-        tn.write("cube.Show = True\n")
+        tn.write("plane.Show = True\n")
 
         tn.read_until('>>>', 0.1)
-        tn.write("cube.Translation = FBVector3d(30, 0, 0)\n")
+        tn.write("plane.Translation = FBVector3d(0, 0, 0)\n")
 
         tn.read_until('>>>', 0.1)
-        tn.write("cube.Scaling = FBVector3d(10, 0.1, 10)\n")
+        tn.write("plane.Scaling = FBVector3d(30, 0.1, 70)\n")
 
     def first_Cube(self):
         global cubeOne
@@ -79,10 +79,12 @@ class Cubes:
 
         print "Second cube: ", cubeTwo
 
+#class
+
 if __name__ == '__main__':
     tn = telnetlib.Telnet("127.0.0.1", 4242)
     c = Cubes()
-    #c.create()
+    c.create_Cube()
 
     while True:
         c.first_Cube()
