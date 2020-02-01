@@ -79,7 +79,7 @@ class Cubes:
 
         print "Second cube: ", cubeTwo
 
-class cubeVal:
+class cubeVal: #test code
     def match_Cube(self):
         print cubeOne[2]
         zArray = [cubeOne[2]/2 + cubeOne[2]]
