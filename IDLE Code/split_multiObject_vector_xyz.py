@@ -17,23 +17,23 @@ class Cubes:
         tn.write("cube.Translation = FBVector3d(10, 10, 0)\n")
 
         tn.read_until('>>>', 0.1)
-        tn.write("cube.Scaling = FBVector3d(10, 10, 10)\n")
+        tn.write("cube.Scaling = FBVector3d(20, 20, 20)\n")
 
         ################   Plane     ######################
         tn.read_until('>>>', 0.1)
-        tn.write("name = ''\n")
+        tn.write("name = 'CubeTwo'\n")
 
         tn.read_until('>>>', 0.1)
-        tn.write("plane = FBModelCube(name)\n")
+        tn.write("cube = FBModelCube(name)\n")
 
         tn.read_until('>>>', 0.1)
-        tn.write("plane.Show = True\n")
+        tn.write("cube.Show = True\n")
 
         tn.read_until('>>>', 0.1)
-        tn.write("plane.Translation = FBVector3d(0, 0, 0)\n")
+        tn.write("cube.Translation = FBVector3d(50, 10, 0)\n")
 
         tn.read_until('>>>', 0.1)
-        tn.write("plane.Scaling = FBVector3d(30, 0.1, 70)\n")
+        tn.write("cube.Scaling = FBVector3d(20, 20, 20)\n")
 
     def first_Cube(self):
         global cubeOne
@@ -56,7 +56,7 @@ class Cubes:
         print "First cube: ", cubeOne
 
         if len(cubeOne) != 4:
-            c.first_Cube()
+            a.first_Cube()
 
     def second_Cube(self):
         global cubeTwo
@@ -79,17 +79,24 @@ class Cubes:
 
         print "Second cube: ", cubeTwo
 
-#class
+class cubeVal:
+    def match_Cube(self):
+        print cubeOne[2]
+        zArray = [cubeOne[2]/2 + cubeOne[2]]
+        print "Positive width of cube: ",zArray[0]
 
 if __name__ == '__main__':
     tn = telnetlib.Telnet("127.0.0.1", 4242)
-    c = Cubes()
-    c.create_Cube()
+    a = Cubes()
+    b = cubeVal()
+    a.create_Cube()
 
     while True:
-        c.first_Cube()
-        c.second_Cube()
-        if((cubeOne[1] >= 16.5  and cubeOne[1] <= 43.5)
-       and (cubeOne[2] >= 3     and cubeOne[2] <= 5)
-       and (cubeOne[3] >= -13.5 and cubeOne[3] <= 13.5)):
-            print("MATCH")
+        a.first_Cube()
+        a.second_Cube()
+        b.match_Cube()
+
+       #  if((cubeOne[1] >= 16.5  and cubeOne[1] <= 43.5)
+       # and (cubeOne[2] >= 3     and cubeOne[2] <= 5)
+       # and (cubeOne[3] >= -13.5 and cubeOne[3] <= 13.5)):
+       #      print("MATCH")
