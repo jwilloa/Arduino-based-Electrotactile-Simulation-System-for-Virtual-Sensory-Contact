@@ -4,6 +4,7 @@ import re
 class Cubes:
     def create_Cube(self):
         ################    First Cube  ######################
+        global ob_1
         tn.read_until('>>>', 0.1)
         tn.write("name = 'CubeOne'\n")
 
@@ -19,21 +20,30 @@ class Cubes:
         tn.read_until('>>>', 0.1)
         tn.write("cube.Scaling = FBVector3d(20, 20, 20)\n")
 
-        ################   Plane     ######################
         tn.read_until('>>>', 0.1)
-        tn.write("name = 'CubeTwo'\n")
+        tn.write("print(cube.Scaling)\n")
 
-        tn.read_until('>>>', 0.1)
-        tn.write("cube = FBModelCube(name)\n")
+######################################
 
-        tn.read_until('>>>', 0.1)
-        tn.write("cube.Show = True\n")
 
-        tn.read_until('>>>', 0.1)
-        tn.write("cube.Translation = FBVector3d(50, 10, 0)\n")
 
-        tn.read_until('>>>', 0.1)
-        tn.write("cube.Scaling = FBVector3d(20, 20, 20)\n")
+
+
+        # ################   Plane     ######################
+        # tn.read_until('>>>', 0.1)
+        # tn.write("name = 'CubeTwo'\n")
+        #
+        # tn.read_until('>>>', 0.1)
+        # tn.write("cube = FBModelCube(name)\n")
+        #
+        # tn.read_until('>>>', 0.1)
+        # tn.write("cube.Show = True\n")
+        #
+        # tn.read_until('>>>', 0.1)
+        # tn.write("cube.Translation = FBVector3d(50, 10, 0)\n")
+        #
+        # tn.read_until('>>>', 0.1)
+        # tn.write("cube.Scaling = FBVector3d(20, 20, 20)\n")
 
     def first_Cube(self):
         global cubeOne
@@ -57,6 +67,15 @@ class Cubes:
 
         if len(cubeOne) != 4:
             a.first_Cube()
+
+        tn.read_until('>>>', 0.1)
+        tn.write("print(myCube1.Scaling)\n")
+
+        ob_1 = str(tn.read_until('>>>', .1))
+        print raw
+        numbers = re.compile('-?\d+(?:\.\d+)?')
+        cubeOne = map(float, numbers.findall(raw))
+        print "First cube: ", cubeOne[0], cubeOne[1], cubeOne[2]
 
     def second_Cube(self):
         global cubeTwo
@@ -91,10 +110,11 @@ if __name__ == '__main__':
     b = cubeVal()
     a.create_Cube()
 
-    while True:
-        a.first_Cube()
-        a.second_Cube()
-        b.match_Cube()
+    # while True:
+
+      #  a.first\_Cube()
+      #  a.second_Cube()
+      #  b.match_Cube()
 
        #  if((cubeOne[1] >= 16.5  and cubeOne[1] <= 43.5)
        # and (cubeOne[2] >= 3     and cubeOne[2] <= 5)
