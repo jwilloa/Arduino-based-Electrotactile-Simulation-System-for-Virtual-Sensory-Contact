@@ -56,12 +56,12 @@ class FiveDTGlove:
         #return list(sensorRawValues)
 
 
-# if __name__ == '__main__':
-#     while True:
-#         glove = FiveDTGlove()
-#         glove.open("USB0")
-#         glove.getSensorRawAll()
-#         ##glove.turnLED()
-#         #print "Raw sensor values: " + str(glove.getSensorRawAll())
-#         print "Thumb: ", list(sensorRawValues)[0], "Index", list(sensorRawValues)[3]
-#         #print "Thumb" + list(sensorRawValues)[2]
+if __name__ == '__main__':
+    while True:
+        glove = FiveDTGlove()
+        glove.open("USB0")
+        glove.getSensorRawAll()
+        ##glove.turnLED()
+        #print "Raw sensor values: " + str(glove.getSensorRawAll())
+        print "Thumb: ", list(sensorRawValues)[0], "Index", list(sensorRawValues)[3]
+        #print "Thumb" + list(sensorRawValues)[2]
