@@ -2,7 +2,7 @@
 import viz
 import vizact
 import time
-import serial
+		
 import viztracker
 import hand
 
@@ -40,14 +40,14 @@ gestureName = ['Fist', 'Index finger point', 'Middle finger point',
 #gestureText.setPosition(0.5,0.1)
 #gestureText.alignment(viz.ALIGN_CENTER)
 
-def getGesture():
-    gesture = int(sensor.get()[-1])
-    gestureText.message(gestureName[gesture])
-    if gesture == 0:
-        print "closed fist"
-    if gesture == 15:
-        print "open hand"
-vizact.ontimer(0, getGesture)
+#def getGesture():
+#    gesture = int(sensor.get()[-1])
+#    gestureText.message(gestureName[gesture])
+#    if gesture == 0:
+#        print "closed fist"
+#    if gesture == 15:
+#        print "open hand"
+#vizact.ontimer(0, getGesture)
 
 
 
@@ -70,7 +70,7 @@ viz.mouse(viz.OFF)													# Disable mouse navigation
 basketball = viz.addChild('basketball.osgb')
 basketball.setPosition([0,2,1.5])
 
-ser = serial.Serial('COM3', 9600, timeout=1) 						# Open serial channel or selected port
+ser = serial.Serial('COM5', 9600, timeout=1) 						# Open serial channel or selected port
 
 link = None 														# The handle to the link object
 													
@@ -87,6 +87,7 @@ def grabBall():
 		
 def releaseBall():
 	global link
+	print "You have released the ball"
 	link.remove()
 	link = None
 	ser.writelines(b'L')
