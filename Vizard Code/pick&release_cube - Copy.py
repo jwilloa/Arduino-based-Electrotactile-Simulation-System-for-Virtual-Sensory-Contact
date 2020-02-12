@@ -1,4 +1,4 @@
-﻿# Import module to gain access to enture Vizard Code library
+# Import module to gain access to enture Vizard Code library
 import viz
 import vizact
 import time
