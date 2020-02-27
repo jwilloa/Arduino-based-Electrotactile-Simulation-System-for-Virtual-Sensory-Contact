@@ -43,7 +43,7 @@ def grabBall():
 		print "You've clicked on the basketball"
 		global link
 		link = viz.grab( hand, basketball ) 						# Use hand to grab basketball
-		glove.getSensorRawAll()
+		#glove.getSensorRawAll()
 	else:
 		print "This is not a basketball"
 		
@@ -54,9 +54,5 @@ def releaseBall():
 	link = None
 
 
-if glove.getSensorRawAll > 2300:
-	print "hi there"
-	grabBall
-
-#vizact.onmousedown(viz.MOUSEBUTTON_LEFT,grabBall)					# When left mouse button is clicked, go to pickBall function
+vizact.onmousedown(viz.MOUSEBUTTON_LEFT,grabBall)					# When left mouse button is clicked, go to pickBall function
 vizact.onmouseup(viz.MOUSEBUTTON_LEFT,releaseBall)
