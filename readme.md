@@ -19,30 +19,7 @@ There are also applications in prosthetics and virtual reality (the underlying b
 
 Below is a rough guidline of how I will be going about the creation of a the prototype. 
 
-```mermaid
-graph TB
-
-  subgraph "Test Topography"
-  SubGraph2[Test] --> Node7[Calibrate]
-  Node7[Calibrate] --> Node8[Demonstrate]
-  Node8 --> FinalThing3[End]
-  end
-
-  subgraph "Hardware Topography"
-  SubGraph1[Connect to Arduino] --> Node5[Test Finger Response with LED]
-  Node5[Test Finger Repsonse with LED] --> Node6[Build ciricuit]
-  Node6 --> SubGraph2[Test]
-  Node6 --> FinalThing2[End]
-  end
-
-  subgraph "Software Topography"
-  Node0[Start Project] --> Node1[5DT Data Glove Setup]
-  Node1[5DT Data Glove Setup] --> Node2[Get glove raw data]
-  Node2[Get glove raw data] --> Node3[Get glove vector values]
-  Node3 --> SubGraph1[Connect to Arduino]
-  Node3 --> FinalThing[End]
-end
-```
+![Image of project topography](https://github.com/jwilloa/Arduino-based-Electrotactile-Simulation-System-for-Virtual-Sensory-Contact/blob/master/Media/Topography.JPG)
 
 ## [Getting Started (Software Based)](https://cseegit.essex.ac.uk/ce301_2019/ce301_willock_j/blob/master/Technical%20Documentation/Getting%20Started%20(Software).md)
 
