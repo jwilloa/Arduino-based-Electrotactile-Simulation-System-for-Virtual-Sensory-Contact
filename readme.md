@@ -1,6 +1,6 @@
 # Arduino-based Electrotactile Simulation System for Virtual Sensory Contact
 
-The project has been tweaked a little bit from it's orginal assignment. Elaborating on the project title, a glove will be worn by a user, 
+Elaborating on the project title, a glove will be worn by a user, 
 and mapping of the finger movements will determine whether contact with a virtual object has been made.
 Upon contact, the user will experience electrotactile stimulation on their fingertips, sufficient enough to give the impression of touch.
 
