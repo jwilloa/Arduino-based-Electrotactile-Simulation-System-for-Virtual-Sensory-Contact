@@ -68,19 +68,10 @@ The idea is the use the just the '**Import functions.py**' as the main file. It 
 | Software      | Version  | Download Link                                                                                                   |
 | ---           |  ------  |---------:                                                                                                       |
 | Multisim      |14.1      | [#](https://www.ni.com/en-gb/support/downloads/software-products/download.multisim.html#312060)                 |
-
-### Component Testing
+| Vizard        |5 (64 Bit)| [#](https://www.worldviz.com/virtual-reality-software-downloads)                                                |
 
 ### PCB Board design
 Board design will be designed and simulated in Multisim prior to building.
 
-### System Building
-
-## Authors
-Provide your names here
+## Author
 * Javan Willock - Project Developer
-
-## References
-* [Gitlab Markdown Guide](https://docs.gitlab.com/ee/user/markdown.html)
-* [Example 1](https://github.com/erasmus-without-paper/ewp-specs-sec-intro/tree/v2.0.2)
-* [Example 2](https://github.com/erasmus-without-paper/ewp-specs-architecture/tree/v1.10.0)
