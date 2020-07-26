@@ -1,9 +1,5 @@
 # Arduino-based Electrotactile Simulation System for Virtual Sensory Contact
 
-Elaborating on the project title, a glove will be worn by a user, 
-and mapping of the finger movements will determine whether contact with a virtual object has been made.
-Upon contact, the user will experience electrotactile stimulation on their fingertips, sufficient enough to give the impression of touch.
-
 ## What is Electrotactile Stimulation (ETS)?
 Electrotactile feedback stimulation development is the subject of many research projects, with ideas for use from medicine to the industry and then every day consumers. 
 The main idea being to communicate non-tactile information via electrical stimulation of the sense of touch to the user. 
